@@ -43,12 +43,16 @@
     <Compile Include="Attributes\JSONFieldAttribute.cs" />
     <Compile Include="JSON.cs" />
     <Compile Include="JSONObject.cs" />
+    <Compile Include="Serialize\DefaultJSONDeserializer.cs" />
+    <Compile Include="Serialize\IJSONDeserialize.cs" />
+    <Compile Include="Serialize\IJSONSerialize.cs" />
+    <Compile Include="Syntax\IJSONReader.cs" />
+    <Compile Include="Syntax\JSONToken.cs" />
+    <Compile Include="Syntax\JSONReader.cs" />
     <Compile Include="TypeReference.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Parser\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
