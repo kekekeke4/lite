@@ -6,23 +6,26 @@ using System.Threading.Tasks;
 
 namespace Lite.Json
 {
-    public class JSONObject : JSON
+    public enum JSONObjectType
     {
-        public int Count
+        Object,
+        Array,
+    }
+
+    public class JSONObject
+    {
+        public JSONObject()
         {
-            get; private set;
+            Values = new List<JSONValue>();
         }
 
-        public bool IsEmpty { get; private set; }
-
-        public bool ContainsKey(object key)
+        public JSONObject(JSONObjectType type)
         {
-            return false;
+            ObjectType = type;
         }
 
-        public bool ContainsValue(object value)
-        {
-            return false;
-        }
+        public List<JSONValue> Values { get; private set; }
+
+        public JSONObjectType ObjectType { get; set; }
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lite.Json
+namespace Lite.Json.Encoding
 {
-    public class TypeReference<T>
+    public class JSONCoder
     {
     }
 }
