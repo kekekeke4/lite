@@ -8,5 +8,9 @@ namespace Lite.Json.Encoding
 {
     public class JSONCoder
     {
+        public string Encode(JSONObject jobj)
+        {
+            return "";
+        }
     }
 }

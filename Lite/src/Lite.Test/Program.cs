@@ -11,14 +11,16 @@ namespace Lite.Test
     {
         static void Main(string[] args)
         {
-            string json = "{"+
-                "\""+"$type"+"\":"+"\""+"hikang"+"\","+
-                "\"" + "name" + "\":" + "\"" + "海康" + "\"," +
-                "\"" + "age" + "\":"  + "123" + "," +
-                "\"" + "score" + "\":"  + "0.555" + "," +
-                "\"" + "isself" + "\":" +  "true" + "," +
-                "\"" + "sex" + "\":" + "\"" + "男" + "\","+
-                "}";
+            //string json = "{"+
+            //    "\""+"$type"+"\":"+"\""+"hikang"+"\","+
+            //    "\"" + "name" + "\":" + "\"" + "海康" + "\"," +
+            //    "\"" + "age" + "\":"  + "123" + "," +
+            //    "\"" + "score" + "\":"  + "0.555" + "," +
+            //    "\"" + "isself" + "\":" +  "true" + "," +
+            //    "\"" + "sex" + "\":" + "\"" + "男" + "\","+
+            //    "}";
+
+            string json = "[{\"sex\":\"man\"},{\"sex\":\"woman\"}]";
 
             Json.Encoding.JSONDecoder jdecoder = new Json.Encoding.JSONDecoder(json);
             JSONObject jobj = jdecoder.Parse();
