@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lite.Json.Encoding
 {
-    public class JSONCoder
+    public class JSONEncoder
     {
         public string Encode(JSONObject jobj)
         {

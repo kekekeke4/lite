@@ -12,7 +12,7 @@ namespace Lite.Json
         Array,
     }
 
-    public class JSONObject
+    public class JSONObject: IJSONString
     {
         public JSONObject()
         {
@@ -28,5 +28,34 @@ namespace Lite.Json
         public List<JSONValue> Values { get; private set; }
 
         public JSONObjectType ObjectType { get; set; }
+
+        public string ToJSONString()
+        {
+            string startStr = "";
+            string endStr = "";
+            if (ObjectType == JSONObjectType.Object)
+            {
+                startStr = "{";
+                endStr = "}";
+            }
+            else
+            {
+                startStr = "[";
+                endStr = "]";
+            }
+
+            StringBuilder valSb = new StringBuilder();
+
+            foreach (JSONValue val in Values)
+            {
+                if (valSb.Length > 0)
+                {
+                    valSb.Append(",");
+                }
+                valSb.Append(val.ToJSONString());
+            }
+
+            return string.Format("{0}{1}{2}", startStr, valSb, endStr);
+        }
     }
 }
