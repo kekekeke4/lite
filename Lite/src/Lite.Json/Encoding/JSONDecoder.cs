@@ -149,7 +149,7 @@ namespace Lite.Json.Encoding
                 else if (token == "\"")
                 {
                     doubleQuoteMeet++;
-                    if (jval.Name==null)
+                    if (jval.Name!=null)
                     {
                         jval.ValueType = JSONValueType.String;
                     }

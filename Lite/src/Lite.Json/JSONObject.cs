@@ -19,7 +19,8 @@ namespace Lite.Json
             Values = new List<JSONValue>();
         }
 
-        public JSONObject(JSONObjectType type)
+        public JSONObject(JSONObjectType type) :
+            this()
         {
             ObjectType = type;
         }
