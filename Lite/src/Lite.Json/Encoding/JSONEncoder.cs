@@ -10,7 +10,11 @@ namespace Lite.Json.Encoding
     {
         public string Encode(JSONObject jobj)
         {
-            return "";
+            if (jobj == null)
+            {
+                return "";
+            }
+            return jobj.ToJSONString();
         }
     }
 }
