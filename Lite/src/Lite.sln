@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lite.Json", "Lite.Json\Lite
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lite.Test", "Lite.Test\Lite.Test.csproj", "{1BB9EB47-63A9-47F9-9D95-F71C22F38C3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lite.RestSharp.Extensions", "Lite.RestSharp.Extensions\Lite.RestSharp.Extensions.csproj", "{BA38A1A6-7534-4445-8789-52CC1C7DD806}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{1BB9EB47-63A9-47F9-9D95-F71C22F38C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BB9EB47-63A9-47F9-9D95-F71C22F38C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BB9EB47-63A9-47F9-9D95-F71C22F38C3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA38A1A6-7534-4445-8789-52CC1C7DD806}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA38A1A6-7534-4445-8789-52CC1C7DD806}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA38A1A6-7534-4445-8789-52CC1C7DD806}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA38A1A6-7534-4445-8789-52CC1C7DD806}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
