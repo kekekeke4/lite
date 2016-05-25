@@ -60,7 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseMapper.cs" />
+    <Compile Include="MapperProxy.cs" />
     <Compile Include="MapperInterceptor.cs" />
     <Compile Include="MybatisAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -33,7 +33,7 @@ namespace Lite.Mybatis.Extensions
 
         public void Intercept(IInvocation invocation)
         {
-            BaseMapper baseMapper = (BaseMapper)invocation.Proxy;
+            MapperProxy baseMapper = (MapperProxy)invocation.Proxy;
             ISqlMapper sqlMapper = baseMapper.SqlMapper;
 
             MethodInfo method = invocation.Method;

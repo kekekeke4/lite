@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Lite.Mybatis.Extensions
 {
-    public class BaseMapper
+    public class MapperProxy
     {
-        public BaseMapper(ISqlMapper sqlMapper)
+        public MapperProxy(ISqlMapper sqlMapper)
         {
             SqlMapper = sqlMapper;
         }
