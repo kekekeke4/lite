@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lite.Test", "Lite.Test\Lite
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lite.RestSharp.Extensions", "Lite.RestSharp.Extensions\Lite.RestSharp.Extensions.csproj", "{BA38A1A6-7534-4445-8789-52CC1C7DD806}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lite.Actor", "Lite.Actor\Lite.Actor.csproj", "{650FEB20-6C79-486C-AA1E-A3B898B37A0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{BA38A1A6-7534-4445-8789-52CC1C7DD806}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA38A1A6-7534-4445-8789-52CC1C7DD806}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA38A1A6-7534-4445-8789-52CC1C7DD806}.Release|Any CPU.Build.0 = Release|Any CPU
+		{650FEB20-6C79-486C-AA1E-A3B898B37A0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{650FEB20-6C79-486C-AA1E-A3B898B37A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{650FEB20-6C79-486C-AA1E-A3B898B37A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{650FEB20-6C79-486C-AA1E-A3B898B37A0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
