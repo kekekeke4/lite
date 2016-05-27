@@ -28,6 +28,11 @@ namespace Lite.Utils
 
         public static T GetAttribute<T>(object instance, bool inherit = false) where T : Attribute
         {
+            if (instance == null)
+            {
+                return null;
+            }
+
             Type insType = instance.GetType();
             object[] attrs = insType.GetCustomAttributes(typeof(T), inherit);
             if (attrs == null)
