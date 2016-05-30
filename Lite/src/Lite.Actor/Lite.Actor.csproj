@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Actor.cs" />
+    <Compile Include="IActorContext.cs" />
     <Compile Include="IActorRef.cs" />
     <Compile Include="IMessageDispatcher.cs" />
     <Compile Include="IMessageQueue.cs" />

@@ -12,11 +12,9 @@ namespace Lite.Actor
 
         public IActorRef Self { get; protected set; }
 
+        public IActorContext Context { get; protected set; }
+
         protected abstract void Received(Message msg);
-    }
-
-    public interface IActorContext
-    {
-
+        
     }
 }

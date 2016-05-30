@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lite.Actor
 {
-    public interface IMessageQueue
+    public interface IActorContext
     {
-        void Push(Message msg);
+        IActorRef ActorOf(string name);
 
-        Message Pop();
+        IMessageDispatcher Dispatcher { get; }
+        
     }
 }
