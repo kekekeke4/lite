@@ -9,5 +9,14 @@ namespace Lite.Actor
     public abstract class Actor
     {
         public string Name { get; set; }
+
+        public IActorRef Self { get; protected set; }
+
+        protected abstract void Received(Message msg);
+    }
+
+    public interface IActorContext
+    {
+
     }
 }

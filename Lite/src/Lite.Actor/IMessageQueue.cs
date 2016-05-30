@@ -8,6 +8,5 @@ namespace Lite.Actor
 {
     public interface IMessageQueue
     {
-
     }
 }
