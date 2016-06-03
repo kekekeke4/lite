@@ -25,27 +25,41 @@ namespace Lite.Utils
 
             return dic;
         }
-
+        
         public static T GetAttribute<T>(object instance, bool inherit = false) where T : Attribute
         {
-            if (instance == null)
-            {
-                return null;
-            }
-
-            Type insType = instance.GetType();
-            object[] attrs = insType.GetCustomAttributes(typeof(T), inherit);
+            IEnumerable<T> attrs = GetAttributes<T>(instance, inherit);
             if (attrs == null)
             {
                 return null;
             }
 
-            if (attrs.Length == 0)
+            foreach (T att in attrs)
             {
-                return null;
+                return att;
             }
 
-            return (T)attrs[0];
+            return null;
+        }
+
+        public static IEnumerable<T> GetAttributes<T>(object instance, bool inherit = false) where T : Attribute
+        {
+            if (instance == null)
+            {
+                yield break;
+            }
+
+            Type insType = instance.GetType();
+            object[] attrs = insType.GetCustomAttributes(typeof(T), inherit);
+            if (attrs == null || attrs.Length == 0)
+            {
+                yield break;
+            }
+
+            foreach (object att in attrs)
+            {
+                yield return (T)att;
+            }
         }
     }
 }
