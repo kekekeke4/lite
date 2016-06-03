@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lite.Actor
+namespace Lite.Actor.Core
 {
     public interface IMessageQueue
     {

@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lite.Actor
+namespace Lite.Actor.Cluster
 {
-    public interface IActorRef
+    public class Class1
     {
-        void Send(Message msg, IActorRef sender);
     }
 }

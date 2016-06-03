@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lite.Actor
+namespace Lite.Actor.Remote
 {
-    public interface IMessageDispatcher
+    public class Class1
     {
-        void Dispatch(Message msg);
     }
 }

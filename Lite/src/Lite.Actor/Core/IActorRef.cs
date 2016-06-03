@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lite.Actor
+namespace Lite.Actor.Core
 {
-    public class Message
+    public interface IActorRef
     {
+        void Send(Message msg, IActorRef sender);
     }
 }
