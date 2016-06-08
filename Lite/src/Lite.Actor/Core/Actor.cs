@@ -14,7 +14,9 @@ namespace Lite.Actor.Core
 
         public IActorContext Context { get; protected set; }
 
+        public IMessageQueue Queue { get; protected set; }
+
         protected abstract void Received(Message msg);
-        
+
     }
 }

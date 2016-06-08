@@ -24,6 +24,9 @@ namespace Lite.Test
 
             Json.Encoding.JSONDecoder jdecoder = new Json.Encoding.JSONDecoder(json);
             JSONObject jobj = jdecoder.Parse();
+
+            string dataStr = "2016-03-31T15:32:32.8655104+08:00";
+            DateTime dt = DateTime.Parse(dataStr);
         }
     }
 }

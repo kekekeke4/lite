@@ -8,5 +8,6 @@ namespace Lite.Actor.Core
 {
     public class Message
     {
+
     }
 }
